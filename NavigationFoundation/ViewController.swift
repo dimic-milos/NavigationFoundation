@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-
+    
+    @IBAction func buttonPresentRedViewControllerTapped(_ sender: UIButton) {
+        navigationController?.present(RedViewController(), animated: true, completion: nil)
+    }
+    
+    @IBAction func buttonShowRedViewControllerTapped(_ sender: UIButton) {
+        navigationController?.show(RedViewController(), sender: self)
+    }
 }
 

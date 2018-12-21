@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedViewController" customModule="NavigationFoundation" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-Tc-Km9">
+                    <rect key="frame" x="301" y="40" width="54" height="30"/>
+                    <state key="normal" title="Dismiss"/>
+                    <connections>
+                        <action selector="buttonDismissTapped:" destination="-1" eventType="touchUpInside" id="WfP-JM-AqP"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-HC-bwm">
+                    <rect key="frame" x="139.5" y="288.5" width="96" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKr-th-uRV">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                            <state key="normal" title="PresentYellow"/>
+                            <connections>
+                                <action selector="buttonPresentYellowViewControllerTapped:" destination="-1" eventType="touchUpInside" id="gby-CN-vEx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZn-us-DWj">
+                            <rect key="frame" x="0.0" y="60" width="96" height="30"/>
+                            <state key="normal" title="ShowYellow"/>
+                            <connections>
+                                <action selector="buttonShowYellowViewControllerTapped:" destination="-1" eventType="touchUpInside" id="1K5-jD-RDJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bZK-HC-bwm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4eu-T3-NuS"/>
+                <constraint firstItem="Oki-Tc-Km9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="8Px-Kf-ZVp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oki-Tc-Km9" secondAttribute="trailing" constant="20" id="fAp-vY-lSK"/>
+                <constraint firstItem="bZK-HC-bwm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rrs-9N-HBm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

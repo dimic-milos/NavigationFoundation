@@ -43,18 +43,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let vcBlue = UIViewController()
                 vcBlue.title = "4"
                 vcBlue.view.backgroundColor = .blue
+                // present vcBlue from vcGreen
                 vcGreen.present(vcBlue, animated: true)
                 
                 Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (_) in
-                    print(mainNavigationController.viewControllers)
-                    vcGreen.dismiss(animated: true)
+                    
+//                    // calling dismiss on mainNavigationController will dismiss all presented view controllers
+//                    mainNavigationController.dismiss(animated: true, completion: nil)
+//
+//                    // calling dismiss on vcBlue will dismiss only vcBlue
+//                    vcBlue.dismiss(animated: false, completion: nil)
+                    
+                    vcGreen.dismiss(animated: false, completion: nil)
+                    vcGreen.dismiss(animated: false, completion: nil)
+                    
                 }
             }
         }
         
         return true
     }
-
-
 }
 
