@@ -20,4 +20,15 @@ class YellowViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func buttonShowGreenViewControllerTapped(_ sender: UIButton) {
+        show(GreenViewController(), sender: self)
+    }
+    
+    @IBAction func buttonPresentGreenViewControllerTapped(_ sender: UIButton) {
+        present(GreenViewController(), animated: true, completion: nil)
+    }
+    
+    @IBAction func buttonPushGreenViewControllerTapped(_ sender: UIButton) {
+        navigationController?.pushViewController(GreenViewController(), animated: true)
+    }
 }

@@ -28,20 +28,27 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bZK-HC-bwm">
-                    <rect key="frame" x="139.5" y="288.5" width="96" height="90"/>
+                    <rect key="frame" x="74" y="258.5" width="227" height="150"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZn-us-DWj">
+                            <rect key="frame" x="0.0" y="0.0" width="227" height="30"/>
+                            <state key="normal" title="self.ShowYellow"/>
+                            <connections>
+                                <action selector="buttonShowYellowViewControllerTapped:" destination="-1" eventType="touchUpInside" id="1K5-jD-RDJ"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKr-th-uRV">
-                            <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
-                            <state key="normal" title="PresentYellow"/>
+                            <rect key="frame" x="0.0" y="60" width="227" height="30"/>
+                            <state key="normal" title="self.PresentYellow"/>
                             <connections>
                                 <action selector="buttonPresentYellowViewControllerTapped:" destination="-1" eventType="touchUpInside" id="gby-CN-vEx"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZn-us-DWj">
-                            <rect key="frame" x="0.0" y="60" width="96" height="30"/>
-                            <state key="normal" title="ShowYellow"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT7-WN-WmQ">
+                            <rect key="frame" x="0.0" y="120" width="227" height="30"/>
+                            <state key="normal" title="navigationController?.pushYellow"/>
                             <connections>
-                                <action selector="buttonShowYellowViewControllerTapped:" destination="-1" eventType="touchUpInside" id="1K5-jD-RDJ"/>
+                                <action selector="buttonPushYellowViewControllerTapped:" destination="-1" eventType="touchUpInside" id="Hjo-cq-JVW"/>
                             </connections>
                         </button>
                     </subviews>

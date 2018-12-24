@@ -12,15 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    @IBAction func buttonShowRedViewControllerTapped(_ sender: UIButton) {
+        navigationController?.show(RedViewController(), sender: self)
     }
     
     @IBAction func buttonPresentRedViewControllerTapped(_ sender: UIButton) {
         navigationController?.present(RedViewController(), animated: true, completion: nil)
     }
     
-    @IBAction func buttonShowRedViewControllerTapped(_ sender: UIButton) {
-        navigationController?.show(RedViewController(), sender: self)
+    @IBAction func buttonPushRedViewControllerTapped(_ sender: UIButton) {
+        navigationController?.pushViewController(RedViewController(), animated: true)
     }
 }
 

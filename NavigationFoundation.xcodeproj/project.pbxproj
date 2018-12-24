@@ -11,6 +11,8 @@
 		07222C1921CCB96700D54886 /* RedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07222C1721CCB96700D54886 /* RedViewController.xib */; };
 		07222C1D21CCBB7A00D54886 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07222C1B21CCBB7A00D54886 /* YellowViewController.swift */; };
 		07222C1E21CCBB7A00D54886 /* YellowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07222C1C21CCBB7A00D54886 /* YellowViewController.xib */; };
+		07222C2221D0B62900D54886 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07222C2021D0B62900D54886 /* GreenViewController.swift */; };
+		07222C2321D0B62900D54886 /* GreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07222C2121D0B62900D54886 /* GreenViewController.xib */; };
 		07AC1C9421CB724C002FB6B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C9321CB724C002FB6B0 /* AppDelegate.swift */; };
 		07AC1C9621CB724C002FB6B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC1C9521CB724C002FB6B0 /* ViewController.swift */; };
 		07AC1C9921CB724C002FB6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AC1C9721CB724C002FB6B0 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		07222C1721CCB96700D54886 /* RedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedViewController.xib; sourceTree = "<group>"; };
 		07222C1B21CCBB7A00D54886 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		07222C1C21CCBB7A00D54886 /* YellowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YellowViewController.xib; sourceTree = "<group>"; };
+		07222C2021D0B62900D54886 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		07222C2121D0B62900D54886 /* GreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GreenViewController.xib; sourceTree = "<group>"; };
 		07AC1C9021CB724C002FB6B0 /* NavigationFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AC1C9321CB724C002FB6B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07AC1C9521CB724C002FB6B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,15 @@
 			path = YellowViewController;
 			sourceTree = "<group>";
 		};
+		07222C1F21D0B61900D54886 /* GreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				07222C2021D0B62900D54886 /* GreenViewController.swift */,
+				07222C2121D0B62900D54886 /* GreenViewController.xib */,
+			);
+			path = GreenViewController;
+			sourceTree = "<group>";
+		};
 		07AC1C8721CB724C002FB6B0 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		07AC1C9221CB724C002FB6B0 /* NavigationFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				07222C1F21D0B61900D54886 /* GreenViewController */,
 				07222C1A21CCBB6200D54886 /* YellowViewController */,
 				07222C1521CCB93900D54886 /* RedViewController */,
 				07AC1C9321CB724C002FB6B0 /* AppDelegate.swift */,
@@ -207,6 +221,7 @@
 			files = (
 				07222C1921CCB96700D54886 /* RedViewController.xib in Resources */,
 				07AC1C9E21CB724E002FB6B0 /* LaunchScreen.storyboard in Resources */,
+				07222C2321D0B62900D54886 /* GreenViewController.xib in Resources */,
 				07AC1C9B21CB724E002FB6B0 /* Assets.xcassets in Resources */,
 				07AC1C9921CB724C002FB6B0 /* Main.storyboard in Resources */,
 				07222C1E21CCBB7A00D54886 /* YellowViewController.xib in Resources */,
@@ -231,6 +246,7 @@
 				07AC1C9621CB724C002FB6B0 /* ViewController.swift in Sources */,
 				07222C1821CCB96700D54886 /* RedViewController.swift in Sources */,
 				07AC1C9421CB724C002FB6B0 /* AppDelegate.swift in Sources */,
+				07222C2221D0B62900D54886 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
